@@ -1,0 +1,14 @@
+series: Matrix Mathematics
+title: Matrix Projection
+author:
+  name: Andrew Litfin
+  email:
+  github: astrodude80
+description: This tutorial explores the use of matrices in projection.
+language: C++
+tags:
+  - Math
+extra_resources:
+connections:
+  - series: Matrix Mathematics
+    title: Matrices and Vectors
