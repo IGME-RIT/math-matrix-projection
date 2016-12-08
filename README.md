@@ -1,10 +1,12 @@
-# Matrix Projection
+# Matrix Projection and Rejection
 
 Previously, vector projection was introduced and explored. However, this is only good to project onto one vector.
 
+Now that we have matrices, the question must be asked "Can projection be represented as a matrix?"
+
 What if we instead want to project onto a subspace spanned by multiple vectors? E.g. what if we want to project onto a 2D plane in R3?
 
-Indeed, we will see that vector projection with the outer product is one specific case of the general method of projection introduced here.
+Indeed, we will see that vector projection can be represented as a matrix, and the process can be extended.
 
 # Setup
 

@@ -4,11 +4,15 @@ author:
   name: Andrew Litfin
   email:
   github: astrodude80
-description: This tutorial explores the use of matrices in projection.
+description: This tutorial revisits projection and rejection with an eye towards the use of matrices.
 language: C++
 tags:
   - Math
 extra_resources:
+  - title: Wikipedia article on Projection as a Linear Transformation
+    link: https://en.wikipedia.org/wiki/Projection_(linear_algebra)
+  - title: Wikipedia article on the Outer Product
+    link: https://en.wikipedia.org/wiki/Outer_product
 connections:
   - series: Matrix Mathematics
     title: Matrices and Vectors
