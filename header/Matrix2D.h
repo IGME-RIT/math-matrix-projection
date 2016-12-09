@@ -48,7 +48,7 @@ public:
 	Matrix2D();
 	// We have chosen the multiplicative identity instead of the additive identity because matrix addition is used less commonly than multiplication.
 
-	// Sets the nij-th element of the matrix to nij
+	// Sets the nij-th element of the matrix
 	Matrix2D(float n00, float n01,
 		float n10, float n11);
 
@@ -66,7 +66,7 @@ public:
 	// Note that we cannot return a reference because row values are not neighbors in memory,
 	//  so we must copy the values
 
-	// Returns a reference to column j (alias for [] when mixing rows and columns (e.g. in matrix multiplication))
+	// Returns a reference to column j (alias for [])
 	Vector2D& col(int j);
 };
 
@@ -98,6 +98,12 @@ Vector2D operator*(Matrix2D m, Vector2D v);
 
 // Returns the product of v (as a row vector) and m.
 Vector2D operator*(Vector2D v, Matrix2D m);
+
+// Compares l and r. Returns true if l and r are equal.
+bool operator==(Matrix2D l, Matrix2D r);
+
+// Negation of ==
+bool operator!=(Matrix2D l, Matrix2D r);
 
 // Returns the determinant of m (the area of the parallelogram with sides m[0] and m[1]).
 float Determinant(Matrix2D m);
@@ -153,6 +159,5 @@ Matrix2D MakeRejection(Vector2D b);
 Matrix2D MakeRotation(float theta);
 
 // A simple << operator for use with std::cout.
-// We assume the matrix is being printed on a new line,
-//  and also print a new line at the end.
+// Note that it ends with a newline.
 std::ostream& operator<<(std::ostream& os, Matrix2D m);
